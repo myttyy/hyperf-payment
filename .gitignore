@@ -5,3 +5,4 @@
 composer.lock
 /examples/config
 /examples/wx/pem
+.vscode
