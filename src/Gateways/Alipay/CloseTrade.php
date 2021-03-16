@@ -22,7 +22,7 @@ use myttyy\Hyperf\Payment\Payment;
  * 
  *2019/3/31 9:13 AM
  * 1.0.1
- * @desc    :
+ * Hyperf支付
  **/
 class CloseTrade extends AliBaseObject implements IGatewayRequest
 {

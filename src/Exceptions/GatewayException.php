@@ -17,7 +17,7 @@ namespace myttyy\Hyperf\Payment\Exceptions;
  * 
  *2019/3/28 10:13 PM
  * 1.0.1
- * @desc    :
+ * Hyperf支付
  **/
 class GatewayException extends \Exception
 {

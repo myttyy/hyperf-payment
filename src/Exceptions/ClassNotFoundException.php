@@ -17,7 +17,7 @@ namespace myttyy\Hyperf\Payment\Exceptions;
  * 
  *2019/3/30 3:30 PM
  * 1.0.1
- * @desc    :
+ * Hyperf支付
  **/
 class ClassNotFoundException extends \RuntimeException
 {

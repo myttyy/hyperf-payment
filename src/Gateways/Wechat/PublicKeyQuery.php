@@ -20,7 +20,7 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
  * 
  *2019/4/7 9:58 AM
  * 1.0.1
- * @desc    :
+ * Hyperf支付
  **/
 class PublicKeyQuery extends WechatBaseObject implements IGatewayRequest
 {

@@ -23,8 +23,8 @@ use Psr\Container\ContainerInterface;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Utils\Codec\Json;
 use Hyperf\Logger\LoggerFactory;
-// use Hyperf\Contract\StdoutLoggerInterface;
-// use Hyperf\Contract\ConfigInterface;
+use Hyperf\Contract\StdoutLoggerInterface;
+use Hyperf\Contract\ConfigInterface;
 
 class PaymentListener implements ListenerInterface
 {
