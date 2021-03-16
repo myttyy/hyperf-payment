@@ -17,11 +17,11 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/31 9:13 AM
- * @version : 1.0.0
+ *2019/3/31 9:13 AM
+ * 1.0.1
  * @desc    :
  **/
 class CloseTrade extends AliBaseObject implements IGatewayRequest

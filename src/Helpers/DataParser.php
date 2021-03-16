@@ -13,11 +13,11 @@ namespace myttyy\Hyperf\Payment\Helpers;
 
 /**
  * Class DataParser
- * @package myttyy\Hyperf\Payment\Helpers
+ *  myttyy\Hyperf\Payment\Helpers
  * 
- * @date    : 2019/3/30 8:12 PM
- * @version : 1.0.0
- * @desc    : 数据格式化
+ *2019/3/30 8:12 PM
+ * 1.0.1
+ * 数据格式化
  *
  */
 class DataParser

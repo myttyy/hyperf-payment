@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ *  myttyy\Hyperf\Payment\Gateways\CMBank
  * 
  * 
- * @date    : 2019/11/27 7:47 PM
- * @version : 1.0.0
- * @desc    : 取消支付协议: 商户如需提供取消客户协议功能，可对接该接口
+ *2019/11/27 7:47 PM
+ * 1.0.1
+ * 取消支付协议: 商户如需提供取消客户协议功能，可对接该接口
  **/
 class ProtocolCancel extends CMBaseObject implements IGatewayRequest
 {

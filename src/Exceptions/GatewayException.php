@@ -12,11 +12,11 @@
 namespace myttyy\Hyperf\Payment\Exceptions;
 
 /**
- * @package myttyy\Hyperf\Payment\Exception
+ *  myttyy\Hyperf\Payment\Exception
  * 
  * 
- * @date    : 2019/3/28 10:13 PM
- * @version : 1.0.0
+ *2019/3/28 10:13 PM
+ * 1.0.1
  * @desc    :
  **/
 class GatewayException extends \Exception

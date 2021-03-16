@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/31 9:12 AM
- * @version : 1.0.0
- * @desc    : 统一收单交易退款查询
+ *2019/3/31 9:12 AM
+ * 1.0.1
+ * 统一收单交易退款查询
  **/
 class RefundQuery extends AliBaseObject implements IGatewayRequest
 {

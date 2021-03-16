@@ -21,12 +21,12 @@ use myttyy\Hyperf\Payment\Supports\BaseObject;
 use myttyy\Hyperf\Payment\Supports\HttpRequest;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/30 8:44 PM
- * @version : 1.0.0
- * @desc    : 支付宝业务的基础类
+ *2019/3/30 8:44 PM
+ * 1.0.1
+ * 支付宝业务的基础类
  **/
 abstract class AliBaseObject extends BaseObject
 {

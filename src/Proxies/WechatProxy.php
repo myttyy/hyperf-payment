@@ -34,12 +34,12 @@ use myttyy\Hyperf\Payment\Payment;
 use myttyy\Hyperf\Payment\Supports\BaseObject;
 
 /**
- * @package myttyy\Hyperf\Payment\Proxys
+ *  myttyy\Hyperf\Payment\Proxys
  * 
  * 
- * @date    : 2019/3/28 10:25 PM
- * @version : 1.0.0
- * @desc    : 微信对外暴露的方案集合
+ *2019/3/28 10:25 PM
+ * 1.0.1
+ * 微信对外暴露的方案集合
  **/
 class WechatProxy extends BaseObject implements IPayProxy, IQueryProxy, ITransferProxy
 {

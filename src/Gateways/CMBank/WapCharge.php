@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/28 10:21 PM
- * @version : 1.0.0
- * @desc    : wap支付
+ *2019/3/28 10:21 PM
+ * 1.0.1
+ * wap支付
  **/
 class WapCharge extends CMBaseObject implements IGatewayRequest
 {

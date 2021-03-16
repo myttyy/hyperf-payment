@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2020/2/2 9:56 下午
- * @version : 1.0.0
- * @desc    : 处理notify的问题
+ *2020/2/2 9:56 下午
+ * 1.0.1
+ * 处理notify的问题
  **/
 class Notify extends AliBaseObject
 {

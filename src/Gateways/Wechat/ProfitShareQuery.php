@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/11/26 9:17 PM
- * @version : 1.0.0
- * @desc    : 查询分账结果
+ *2019/11/26 9:17 PM
+ * 1.0.1
+ * 查询分账结果
  **/
 class ProfitShareQuery extends WechatBaseObject implements IGatewayRequest
 {

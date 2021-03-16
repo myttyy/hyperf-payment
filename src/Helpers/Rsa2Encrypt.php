@@ -13,11 +13,11 @@ namespace myttyy\Hyperf\Payment\Helpers;
 
 /**
  * Class Rsa2Encrypt
- * @package myttyy\Hyperf\Payment\Helpers
+ *  myttyy\Hyperf\Payment\Helpers
  * 
- * @date    : 2019/3/30 8:12 PM
- * @version : 1.0.0
- * @desc    : rsa2加密算法
+ *2019/3/30 8:12 PM
+ * 1.0.1
+ * rsa2加密算法
  *
  */
 class Rsa2Encrypt

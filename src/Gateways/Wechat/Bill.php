@@ -16,12 +16,12 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/1 8:28 PM
- * @version : 1.0.0
- * @desc    : 下载账单
+ *2019/4/1 8:28 PM
+ * 1.0.1
+ * 下载账单
  **/
 class Bill extends WechatBaseObject implements IGatewayRequest
 {

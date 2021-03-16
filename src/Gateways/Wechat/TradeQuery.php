@@ -16,12 +16,12 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/1 8:27 PM
- * @version : 1.0.0
- * @desc    : 该接口提供所有微信支付订单的查询
+ *2019/4/1 8:27 PM
+ * 1.0.1
+ * 该接口提供所有微信支付订单的查询
  **/
 class TradeQuery extends WechatBaseObject implements IGatewayRequest
 {

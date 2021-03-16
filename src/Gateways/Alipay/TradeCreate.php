@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/11/26 9:33 PM
- * @version : 1.0.0
- * @desc    : 统一收单交易创建接口
+ *2019/11/26 9:33 PM
+ * 1.0.1
+ * 统一收单交易创建接口
  **/
 class TradeCreate extends AliBaseObject implements IGatewayRequest
 {

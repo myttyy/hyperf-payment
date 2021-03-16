@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ *  myttyy\Hyperf\Payment\Gateways\CMBank
  * 
  * 
- * @date    : 2019/11/27 7:03 PM
- * @version : 1.0.0
- * @desc    : 对账文件下载
+ *2019/11/27 7:03 PM
+ * 1.0.1
+ * 对账文件下载
  **/
 class Bill extends CMBaseObject implements IGatewayRequest
 {

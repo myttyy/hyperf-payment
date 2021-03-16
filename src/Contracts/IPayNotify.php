@@ -15,9 +15,9 @@ namespace myttyy\Hyperf\Payment\Contracts;
  * 
  * 
  * 
- * @date    : 2020/2/1 1:30 下午
- * @version : 1.0.0
- * @desc    : 异步通知的接口
+ *2020/2/1 1:30 下午
+ * 1.0.1
+ * 异步通知的接口
  **/
 interface IPayNotify
 {

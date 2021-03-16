@@ -31,12 +31,12 @@ use myttyy\Hyperf\Payment\Payment;
 use myttyy\Hyperf\Payment\Supports\BaseObject;
 
 /**
- * @package myttyy\Hyperf\Payment\Proxys
+ *  myttyy\Hyperf\Payment\Proxys
  * 
  * 
- * @date    : 2019/3/28 10:25 PM
- * @version : 1.0.0
- * @desc    : 支付宝的代理类
+ *2019/3/28 10:25 PM
+ * 1.0.1
+ * 支付宝的代理类
  **/
 class AlipayProxy extends BaseObject implements IPayProxy, IQueryProxy, ITransferProxy
 {

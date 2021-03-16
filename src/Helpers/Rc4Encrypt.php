@@ -13,11 +13,11 @@ namespace myttyy\Hyperf\Payment\Helpers;
 
 /**
  * Class Rc4Encrypt
- * @package myttyy\Hyperf\Payment\Helpers
+ *  myttyy\Hyperf\Payment\Helpers
  * 
- * @date    : 2019/3/30 8:12 PM
- * @version : 1.0.0
- * @desc    : rc4 加密实现
+ *2019/3/30 8:12 PM
+ * 1.0.1
+ * rc4 加密实现
  *
  */
 class Rc4Encrypt

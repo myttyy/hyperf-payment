@@ -15,9 +15,9 @@ namespace myttyy\Hyperf\Payment\Contracts;
  * 
  * 
  * 
- * @date    : 2019/3/28 10:27 PM
- * @version : 1.0.0
- * @desc    : 支付接口
+ *2019/3/28 10:27 PM
+ * 1.0.1
+ * 支付接口
  **/
 interface IPayProxy
 {

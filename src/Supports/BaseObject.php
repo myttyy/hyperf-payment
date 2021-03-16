@@ -13,11 +13,11 @@ namespace myttyy\Hyperf\Payment\Supports;
 
 /**
  * Class Object
- * @package myttyy\Hyperf\Payment\Supports
+ *  myttyy\Hyperf\Payment\Supports
  * 
- * @date    : 2019/3/30 2:39 PM
- * @version : 1.0.0
- * @desc    : 整个lib的基础类
+ *2019/3/30 2:39 PM
+ * 1.0.1
+ * 整个lib的基础类
  *
  */
 abstract class BaseObject

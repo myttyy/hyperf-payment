@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ *  myttyy\Hyperf\Payment\Gateways\CMBank
  * 
  * 
- * @date    : 2019/11/27 2:17 PM
- * @version : 1.0.0
- * @desc    : 查询招行公钥API
+ *2019/11/27 2:17 PM
+ * 1.0.1
+ * 查询招行公钥API
  **/
 class PublicKeyQuery extends CMBaseObject implements IGatewayRequest
 {

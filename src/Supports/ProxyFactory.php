@@ -15,12 +15,12 @@ use InvalidArgumentException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Supports
+ *  myttyy\Hyperf\Payment\Supports
  * 
  * 
- * @date    : 2019/3/30 2:20 PM
- * @version : 1.0.0
- * @desc    : 创建代理的工厂类
+ *2019/3/30 2:20 PM
+ * 1.0.1
+ * 创建代理的工厂类
  **/
 class ProxyFactory
 {

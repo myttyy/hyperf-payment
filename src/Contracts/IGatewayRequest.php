@@ -17,9 +17,9 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
  * 
  * 
  * 
- * @date    : 2019/3/30 10:29 AM
- * @version : 1.0.0
- * @desc    : 网关功能标准接口
+ *2019/3/30 10:29 AM
+ * 1.0.1
+ * 网关功能标准接口
  **/
 interface IGatewayRequest
 {

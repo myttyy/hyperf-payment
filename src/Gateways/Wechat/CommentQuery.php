@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/7 9:39 AM
- * @version : 1.0.0
- * @desc    : 拉取订单评价数据
+ *2019/4/7 9:39 AM
+ * 1.0.1
+ * 拉取订单评价数据
  **/
 class CommentQuery extends WechatBaseObject implements IGatewayRequest
 {

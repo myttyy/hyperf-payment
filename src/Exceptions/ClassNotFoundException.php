@@ -12,11 +12,11 @@
 namespace myttyy\Hyperf\Payment\Exceptions;
 
 /**
- * @package myttyy\Hyperf\Payment\Exceptions
+ *  myttyy\Hyperf\Payment\Exceptions
  * 
  * 
- * @date    : 2019/3/30 3:30 PM
- * @version : 1.0.0
+ *2019/3/30 3:30 PM
+ * 1.0.1
  * @desc    :
  **/
 class ClassNotFoundException extends \RuntimeException

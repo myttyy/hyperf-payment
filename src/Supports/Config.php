@@ -12,12 +12,12 @@
 namespace myttyy\Hyperf\Payment\Supports;
 
 /**
- * @package myttyy\Hyperf\Payment
+ *  myttyy\Hyperf\Payment
  * 
  * 
- * @date    : 2019/3/30 10:50 AM
- * @version : 1.0.0
- * @desc    : 配置文件处理类
+ *2019/3/30 10:50 AM
+ * 1.0.1
+ * 配置文件处理类
  **/
 class Config implements \ArrayAccess
 {

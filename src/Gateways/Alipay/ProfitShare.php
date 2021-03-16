@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/11/25 6:58 PM
- * @version : 1.0.0
- * @desc    : 用于在线下场景交易支付后，进行卖家与第三方（如供应商或平台商）基于交易金额的结算
+ *2019/11/25 6:58 PM
+ * 1.0.1
+ * 用于在线下场景交易支付后，进行卖家与第三方（如供应商或平台商）基于交易金额的结算
  **/
 class ProfitShare extends AliBaseObject implements IGatewayRequest
 {

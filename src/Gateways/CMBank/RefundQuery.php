@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ *  myttyy\Hyperf\Payment\Gateways\CMBank
  * 
  * 
- * @date    : 2019/11/27 7:43 PM
- * @version : 1.0.0
- * @desc    : 查询具体某笔交易的退款状态
+ *2019/11/27 7:43 PM
+ * 1.0.1
+ * 查询具体某笔交易的退款状态
  **/
 class RefundQuery extends CMBaseObject implements IGatewayRequest
 {

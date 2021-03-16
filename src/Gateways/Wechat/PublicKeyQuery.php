@@ -15,11 +15,11 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/7 9:58 AM
- * @version : 1.0.0
+ *2019/4/7 9:58 AM
+ * 1.0.1
  * @desc    :
  **/
 class PublicKeyQuery extends WechatBaseObject implements IGatewayRequest

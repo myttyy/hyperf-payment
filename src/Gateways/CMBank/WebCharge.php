@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ *  myttyy\Hyperf\Payment\Gateways\CMBank
  * 
  * 
- * @date    : 2020/1/30 10:38 下午
- * @version : 1.0.0
- * @desc    : pc支付
+ *2020/1/30 10:38 下午
+ * 1.0.1
+ * pc支付
  **/
 class WebCharge extends CMBaseObject implements IGatewayRequest
 {

@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/30 3:12 PM
- * @version : 1.0.0
- * @desc    : 收银员使用扫码设备读取用户手机支付宝“付款码”
+ *2019/3/30 3:12 PM
+ * 1.0.1
+ * 收银员使用扫码设备读取用户手机支付宝“付款码”
  **/
 class BarCharge extends AliBaseObject implements IGatewayRequest
 {

@@ -15,9 +15,9 @@ namespace myttyy\Hyperf\Payment\Contracts;
  * 
  * 
  * 
- * @date    : 2019/3/28 10:32 PM
- * @version : 1.0.0
- * @desc    : 转账交易接口
+ *2019/3/28 10:32 PM
+ * 1.0.1
+ * 转账交易接口
  **/
 interface ITransferProxy
 {

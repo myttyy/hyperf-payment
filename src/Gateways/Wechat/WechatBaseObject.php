@@ -20,12 +20,12 @@ use myttyy\Hyperf\Payment\Supports\BaseObject;
 use myttyy\Hyperf\Payment\Supports\HttpRequest;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/7 8:55 AM
- * @version : 1.0.0
- * @desc    : 微信网络请求基类
+ *2019/4/7 8:55 AM
+ * 1.0.1
+ * 微信网络请求基类
  **/
 abstract class WechatBaseObject extends BaseObject
 {

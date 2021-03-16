@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2020/1/30 9:41 下午
- * @version : 1.0.0
- * @desc    : 该接口用于商户向支付宝同步该笔订单相关业务信息
+ *2020/1/30 9:41 下午
+ * 1.0.1
+ * 该接口用于商户向支付宝同步该笔订单相关业务信息
  **/
 class OrderInfoSync extends AliBaseObject implements IGatewayRequest
 {

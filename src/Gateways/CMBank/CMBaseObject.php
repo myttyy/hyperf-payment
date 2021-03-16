@@ -20,12 +20,12 @@ use myttyy\Hyperf\Payment\Supports\BaseObject;
 use myttyy\Hyperf\Payment\Supports\HttpRequest;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ *  myttyy\Hyperf\Payment\Gateways\CMBank
  * 
  * 
- * @date    : 2019/11/26 9:52 PM
- * @version : 1.0.0
- * @desc    : 招商银行基础类  /  http://openhome.cmbchina.com/PayNew/pay/home
+ *2019/11/26 9:52 PM
+ * 1.0.1
+ * 招商银行基础类  /  http://openhome.cmbchina.com/PayNew/pay/home
  **/
 abstract class CMBaseObject extends BaseObject
 {

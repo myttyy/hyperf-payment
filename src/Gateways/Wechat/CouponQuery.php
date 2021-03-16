@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/7 10:03 AM
- * @version : 1.0.0
- * @desc    : 查询代金券批次
+ *2019/4/7 10:03 AM
+ * 1.0.1
+ * 查询代金券批次
  **/
 class CouponQuery extends WechatBaseObject implements IGatewayRequest
 {

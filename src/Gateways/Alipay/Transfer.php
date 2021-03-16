@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/31 2:56 PM
- * @version : 1.0.0
- * @desc    : 单笔转账到支付宝账户
+ *2019/3/31 2:56 PM
+ * 1.0.1
+ * 单笔转账到支付宝账户
  **/
 class Transfer extends AliBaseObject implements IGatewayRequest
 {

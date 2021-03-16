@@ -13,11 +13,11 @@ namespace myttyy\Hyperf\Payment\Helpers;
 
 /**
  * Class StrUtil
- * @package myttyy\Hyperf\Payment\Helpers
+ *  myttyy\Hyperf\Payment\Helpers
  * 
- * @date    : 2019/3/30 8:12 PM
- * @version : 1.0.0
- * @desc    : 字符串处理类
+ *2019/3/30 8:12 PM
+ * 1.0.1
+ * 字符串处理类
  *
  */
 class StrUtil

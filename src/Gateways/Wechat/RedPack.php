@@ -15,12 +15,12 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/1 8:30 PM
- * @version : 1.0.0
- * @desc    : 发送红包
+ *2019/4/1 8:30 PM
+ * 1.0.1
+ * 发送红包
  **/
 class RedPack extends WechatBaseObject implements IGatewayRequest
 {

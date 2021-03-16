@@ -16,12 +16,12 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ *  myttyy\Hyperf\Payment\Gateways\Alipay
  * 
  * 
- * @date    : 2019/3/28 10:21 PM
- * @version : 1.0.0
- * @desc    : 付款码支付
+ *2019/3/28 10:21 PM
+ * 1.0.1
+ * 付款码支付
  **/
 class BarCharge extends WechatBaseObject implements IGatewayRequest
 {

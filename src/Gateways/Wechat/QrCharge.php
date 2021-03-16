@@ -16,12 +16,12 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2019/4/1 8:23 PM
- * @version : 1.0.0
- * @desc    : 扫码支付（Native支付）
+ *2019/4/1 8:23 PM
+ * 1.0.1
+ * 扫码支付（Native支付）
  **/
 class QrCharge extends WechatBaseObject implements IGatewayRequest
 {

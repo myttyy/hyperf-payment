@@ -13,11 +13,11 @@ namespace myttyy\Hyperf\Payment\Helpers;
 
 /**
  * Class ArrayUtil
- * @package myttyy\Hyperf\Payment\Helpers
+ *  myttyy\Hyperf\Payment\Helpers
  * 
- * @date    : 2019/3/30 8:11 PM
- * @version : 1.0.0
- * @desc    : 处理数组的工具类
+ *2019/3/30 8:11 PM
+ * 1.0.1
+ * 处理数组的工具类
  *
  */
 class ArrayUtil

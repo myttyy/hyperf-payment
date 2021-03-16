@@ -17,12 +17,12 @@ use myttyy\Hyperf\Payment\Helpers\DataParser;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ *  myttyy\Hyperf\Payment\Gateways\Wechat
  * 
  * 
- * @date    : 2020/2/1 3:19 下午
- * @version : 1.0.0
- * @desc    : 异步通知数据处理
+ *2020/2/1 3:19 下午
+ * 1.0.1
+ * 异步通知数据处理
  **/
 class Notify extends WechatBaseObject
 {

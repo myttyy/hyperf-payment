@@ -12,12 +12,12 @@
 namespace myttyy\Hyperf\Payment;
 
 /**
- * @package myttyy\Hyperf\Payment
+ *  myttyy\Hyperf\Payment
  * 
  * 
- * @date    : 2019/3/30 3:32 PM
- * @version : 1.0.0
- * @desc    : 系统常量
+ *2019/3/30 3:32 PM
+ * 1.0.1
+ * 系统常量
  **/
 final class Payment
 {
