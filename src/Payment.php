@@ -12,9 +12,9 @@
 namespace myttyy\Hyperf\Payment;
 
 /**
- * @package Payment
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment
+ * 
+ * 
  * @date    : 2019/3/30 3:32 PM
  * @version : 1.0.0
  * @desc    : 系统常量

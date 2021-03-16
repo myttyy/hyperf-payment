@@ -15,9 +15,9 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Gateways\Wechat
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ * 
+ * 
  * @date    : 2019/11/26 6:55 PM
  * @version : 1.0.0
  * @desc    : 撤销订单，支付交易返回失败或支付系统超时，调用该接口撤销交易

@@ -16,9 +16,9 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package Payment\Gateways\CMBank
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ * 
+ * 
  * @date    : 2019/11/27 7:16 PM
  * @version : 1.0.0
  * @desc    : 查询单笔订单: 查询支付订单的状态等信息。商户未收到支付结果通知的情况下，如需确认订单状态，可以通过单笔订单查询接口查询订单状态。

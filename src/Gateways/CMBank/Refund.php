@@ -15,9 +15,9 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Gateways\CMBank
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ * 
+ * 
  * @date    : 2019/11/27 7:23 PM
  * @version : 1.0.0
  * @desc    : 退款: 该接口可选对接。商户也可登录“网上商户结账处理系统”执行退款。

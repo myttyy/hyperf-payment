@@ -13,8 +13,8 @@ namespace myttyy\Hyperf\Payment\Supports;
 
 /**
  * Class Object
- * @package Payment\Supports
- * @author  : Leo
+ * @package myttyy\Hyperf\Payment\Supports
+ * 
  * @date    : 2019/3/30 2:39 PM
  * @version : 1.0.0
  * @desc    : 整个lib的基础类

@@ -17,9 +17,9 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package Payment\Gateways\Alipay
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ * 
+ * 
  * @date    : 2019/11/25 6:58 PM
  * @version : 1.0.0
  * @desc    : 用于在线下场景交易支付后，进行卖家与第三方（如供应商或平台商）基于交易金额的结算

@@ -441,7 +441,7 @@ time_expire | 订单失效时间，时间戳 | N
 goods_tag | 商品标记，代金券或立减优惠功能的参数，说明详见[代金券或立减优惠](https://pay.weixin.qq.com/wiki/doc/api/tools/sp_coupon.php?chapter=12_1) | N
 scene_info | 该字段用于上报支付的场景信息，具体见微信文档 | N
 
-使用时，自行使用上面的字段构建好一个数组，并传入到 `\Payment\Client` 实例对应的方法中。后面均是相同，不在重复。
+使用时，自行使用上面的字段构建好一个数组，并传入到 `\myttyy\Hyperf\Payment\Client` 实例对应的方法中。后面均是相同，不在重复。
 
 #### 账单请求参数
 
@@ -503,10 +503,27 @@ trade_no | 商户系统内部订单号，要求32个字符内 ，且在同一个
 
 #### 付款到零钱请求参数
 
+- **伪代码**
+
+```php
+  $orderInfo = [
+    'channel' => 'account',
+    'trans_no' => '',
+    'openid' => '',
+    'check_name' => 'NO_CHECK',
+    're_user_name' => '',
+    'amount' => '', // 企业付款金额，单位为元
+    'desc' => '',
+    'client_ip' => '',
+    'device_info' => '',
+  ];
+  $client = new Client(Client::);
+  $client->transfer($orderInfo);
+```
+
 字段 | 解释 | 必须
 ---|---|---
 channel | 付款的渠道 bank:付款到银行；account:付款到账号 | Y
-device_info | 微信支付分配的终端设备号 | N
 trans_no | 商户订单号，需保持唯一性(只能是字母或者数字，不能包含有其它字符) | Y
 openid | 商户appid下，某用户的openid | Y
 check_name | NO_CHECK：不校验真实姓名;FORCE_CHECK：强校验真实姓名 | Y
@@ -514,6 +531,7 @@ re_user_name | 收款用户真实姓名。如果check_name设置为FORCE_CHECK�
 amount | 企业付款金额，单位为元 | Y
 desc | 企业付款备注，必填。注意：备注中的敏感词会被转成字符* | Y
 client_ip | 该IP同在商户平台设置的IP白名单中的IP没有关联，该IP可传用户端或者服务端的IP。 | Y
+device_info | 微信支付分配的终端设备号 | N
 
 #### 付款到银行请求参数
 
@@ -642,15 +660,9 @@ date | 商户订单日期，时间戳 | Y
 message_key | 交易流水，合作方内部唯一流水 | Y
 
 
-## 设计支付系统
-
-`Payment` 解决了对接第三方渠道的各种问题，但是一个合理的支付完整系统该如何设计？估计大家还有很多疑问。关于支付系统的设计大家可以参考该项目：https://github.com/skr-shop/manuals
-
-这是我与小伙伴开源的另外一个关于电商的项目，里边对电商的各个模块设计进行了详细的描述。
-
 ## 支持的接口
 
-对应到第三方的具体接口
+对应到支付原生的具体接口
 
 ### 支付宝
 
@@ -710,7 +722,7 @@ message_key | 交易流水，合作方内部唯一流水 | Y
 - [下载对账单](http://openhome.cmbchina.com/PayNew/pay/doc/cell/QRcode/DownloadRecordedDetails)
 - [查询招行公钥](http://openhome.cmbchina.com/PayNew/pay/doc/cell/QRcode/QueryKeyAPI)
 
-# 第三方文档
+# 原始服务文档
 
 - [支付宝](https://docs.open.alipay.com/api_1)
 - [微信](https://pay.weixin.qq.com/wiki/doc/api/index.html)

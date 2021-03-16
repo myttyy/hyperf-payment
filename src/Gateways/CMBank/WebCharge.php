@@ -15,9 +15,9 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Gateways\CMBank
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ * 
+ * 
  * @date    : 2020/1/30 10:38 下午
  * @version : 1.0.0
  * @desc    : pc支付

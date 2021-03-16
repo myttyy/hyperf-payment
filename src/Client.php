@@ -19,9 +19,9 @@ use myttyy\Hyperf\Payment\Proxies\CMBankProxy;
 use myttyy\Hyperf\Payment\Supports\ProxyFactory;
 
 /**
- * @package Payment
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment
+ * 
+ * 
  * @date    : 2019/3/28 10:20 PM
  * @version : 1.0.0
  * @desc    : 客户端类

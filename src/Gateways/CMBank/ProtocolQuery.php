@@ -15,9 +15,9 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Gateways\CMBank
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ * 
+ * 
  * @date    : 2019/11/27 7:47 PM
  * @version : 1.0.0
  * @desc    : 支付协议查询: 查询客户一网通支付协议是否已经成功签署，如果银行未正常返回客户的签约结果，商户可通过该接口主动发起查询

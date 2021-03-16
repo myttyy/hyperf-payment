@@ -17,9 +17,9 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package Payment\Gateways\Alipay
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ * 
+ * 
  * @date    : 2019/11/25 7:01 PM
  * @version : 1.0.0
  * @desc    : 收银员使用扫码设备读取用户支付宝钱包“付款码”后，将条码信息和订单信息通过本接口上送至支付宝发起资金冻结

@@ -15,9 +15,9 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Gateways\CMBank
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ * 
+ * 
  * @date    : 2019/11/27 7:03 PM
  * @version : 1.0.0
  * @desc    : 查询入账明细: 查询商户入账明细，商户系统应以招行入账明细为准进行对账，对账不平的交易进行退款或请款协商。

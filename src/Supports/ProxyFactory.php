@@ -15,9 +15,9 @@ use InvalidArgumentException;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package Payment\Supports
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Supports
+ * 
+ * 
  * @date    : 2019/3/30 2:20 PM
  * @version : 1.0.0
  * @desc    : 创建代理的工厂类

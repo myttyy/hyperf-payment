@@ -17,9 +17,9 @@ use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 use myttyy\Hyperf\Payment\Payment;
 
 /**
- * @package Payment\Gateways\Alipay
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ * 
+ * 
  * @date    : 2020/1/30 9:41 下午
  * @version : 1.0.0
  * @desc    : 该接口用于商户向支付宝同步该笔订单相关业务信息

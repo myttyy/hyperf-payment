@@ -15,9 +15,9 @@ use myttyy\Hyperf\Payment\Contracts\IGatewayRequest;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Gateways\Wechat
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\Wechat
+ * 
+ * 
  * @date    : 2019/11/26 9:24 PM
  * @version : 1.0.0
  * @desc    : 完结分账，不需要分账的数据

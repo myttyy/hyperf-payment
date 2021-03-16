@@ -20,9 +20,9 @@ use myttyy\Hyperf\Payment\Supports\BaseObject;
 use myttyy\Hyperf\Payment\Supports\HttpRequest;
 
 /**
- * @package Payment\Gateways\CMBank
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\CMBank
+ * 
+ * 
  * @date    : 2019/11/26 9:52 PM
  * @version : 1.0.0
  * @desc    : 招商银行基础类  /  http://openhome.cmbchina.com/PayNew/pay/home

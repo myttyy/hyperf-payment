@@ -14,9 +14,9 @@ namespace myttyy\Hyperf\Payment\Contracts;
 use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 
 /**
- * @package Payment\Contracts
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * 
+ * 
+ * 
  * @date    : 2019/3/30 10:29 AM
  * @version : 1.0.0
  * @desc    : 网关功能标准接口

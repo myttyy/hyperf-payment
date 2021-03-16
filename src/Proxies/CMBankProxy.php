@@ -28,9 +28,9 @@ use myttyy\Hyperf\Payment\Payment;
 use myttyy\Hyperf\Payment\Supports\BaseObject;
 
 /**
- * @package Payment\Proxys
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Proxys
+ * 
+ * 
  * @date    : 2019/3/28 10:25 PM
  * @version : 1.0.0
  * @desc    : http://121.15.180.72/OpenAPI2/DOC/DOCdefault.aspx

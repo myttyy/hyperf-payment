@@ -12,9 +12,9 @@
 namespace myttyy\Hyperf\Payment\Exceptions;
 
 /**
- * @package Payment\Exceptions
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Exceptions
+ * 
+ * 
  * @date    : 2019/3/30 3:30 PM
  * @version : 1.0.0
  * @desc    :

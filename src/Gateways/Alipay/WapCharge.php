@@ -16,9 +16,9 @@ use myttyy\Hyperf\Payment\Exceptions\GatewayException;
 use myttyy\Hyperf\Payment\Helpers\ArrayUtil;
 
 /**
- * @package Payment\Gateways\Alipay
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Gateways\Alipay
+ * 
+ * 
  * @date    : 2019/3/30 3:12 PM
  * @version : 1.0.0
  * @desc    : 手机网站支付接口2.0

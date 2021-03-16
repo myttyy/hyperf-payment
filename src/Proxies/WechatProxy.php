@@ -34,9 +34,9 @@ use myttyy\Hyperf\Payment\Payment;
 use myttyy\Hyperf\Payment\Supports\BaseObject;
 
 /**
- * @package Payment\Proxys
- * @author  : Leo
- * @email   : dayugog@gmail.com
+ * @package myttyy\Hyperf\Payment\Proxys
+ * 
+ * 
  * @date    : 2019/3/28 10:25 PM
  * @version : 1.0.0
  * @desc    : 微信对外暴露的方案集合
@@ -243,7 +243,7 @@ class WechatProxy extends BaseObject implements IPayProxy, IQueryProxy, ITransfe
      */
     public function transfer(array $requestParams)
     {
-        $channel = $requestParams['channel'] ?? 'bank';
+        $channel = $requestParams['channel'] ?? 'account';
 
         try {
             if ($channel === 'bank') {
