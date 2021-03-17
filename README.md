@@ -1,6 +1,8 @@
 # hyperf-payment
-基于[helei112g/payment](https://github.com/helei112g/payment)改造后为hyperf写的一个支付组件.感谢Leo <dayugog@gmail.com>大佬写的优秀库类
-感谢[helei112g/payment]的改造，此版本重新适配swoole4.6.x+hyperf2.x
+
+- 基于[helei112g/payment](https://github.com/helei112g/payment)改造后为hyperf写的一个支付组件.感谢Leo <dayugog@gmail.com>大佬写的优秀库类
+
+- 感谢[helei112g/payment](https://github.com/helei112g/payment)的改造参考，此版本重新适配swoole4.6.x+hyperf2.x
 
 ## 项目集成
 

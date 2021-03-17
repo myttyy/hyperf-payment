@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 return [
     'payment' => [
-        'ali' => [
+        'aliapy' => [
             'options' => [
                 'app_id' => env('ALIPAY_APPID', ''),
                 'sign_type' => 'RSA2',
@@ -36,7 +36,7 @@ return [
                 'fee_type' => 'CNY',  // 货币类型  当前仅支持该字段
             ],
         ],
-        'wx' => [
+        'weixin' => [
             'options' => [
                 'app_id' => env('WXPAY_APPID', ''),
                 'mch_id' => env('WXPAY_MCHID', ''),
