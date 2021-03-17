@@ -47,7 +47,7 @@ class DataParser
 
     /**
      * 将xml转为array
-     * @param string $xml
+     * @param mixed $xml
      * @return array|false
      */
     public static function toArray($xml)
@@ -56,17 +56,26 @@ class DataParser
             return false;
         }
 
+        if (is_array($xml)) {
+
+            // myttyy 兼容 Hyperf\Guzzle 请求后返回数组
+            $data = [];
+            foreach ($xml as $k => $v) {
+                $data[$k] = !empty($v) ? $v : '';
+            }
+            unset($xml);
+            return $data;
+        }
+
         // 检查xml是否合法
         $xml_parser = xml_parser_create();
+
         if (!xml_parse($xml_parser, $xml, true)) {
             xml_parser_free($xml_parser);
             return false;
         }
 
         //将XML转为array
-        //禁止引用外部xml实体
-        libxml_disable_entity_loader(true);
-
         $data = json_decode(json_encode(simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA)), true);
 
         return $data;

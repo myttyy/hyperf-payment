@@ -20,12 +20,12 @@ use myttyy\Hyperf\Payment\Supports\BaseObject;
 use myttyy\Hyperf\Payment\Supports\HttpRequest;
 
 /**
- *  myttyy\Hyperf\Payment\Gateways\Wechat
- * 
- * 
- *2019/4/7 8:55 AM
- * 1.0.1
- * 微信网络请求基类
+ * @package Payment\Gateways\Wechat
+ * @author  : Leo
+ * @email   : dayugog@gmail.com
+ * @date    : 2019/4/7 8:55 AM
+ * @version : 1.0.0
+ * @desc    : 微信网络请求基类
  **/
 abstract class WechatBaseObject extends BaseObject
 {
@@ -110,7 +110,6 @@ abstract class WechatBaseObject extends BaseObject
         // 如果是沙盒模式，更换密钥
         if ($this->isSandbox && empty($this->sandboxKey)) {
             $this->sandboxKey = $this->getSignKey();
-            //$this->sandboxKey = 'c15772692e55c8db69b40d1cb8e6f627';
             $this->merKey = $this->sandboxKey;
         }
     }

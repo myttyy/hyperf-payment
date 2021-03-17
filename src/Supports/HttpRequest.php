@@ -12,8 +12,11 @@
 namespace myttyy\Hyperf\Payment\Supports;
 
 use GuzzleHttp\Client;
-use Hyperf\Guzzle\ClientFactory;
 use Psr\Http\Message\ResponseInterface;
+
+use Hyperf\Guzzle\ClientFactory;
+// use Hyperf\Guzzle\HandlerStackFactory;
+use myttyy\Hyperf\Payment\Helpers\DataParser;
 
 /**
  * Trait HasHttpRequest.
@@ -145,7 +148,15 @@ trait HttpRequest
 
         $clientFactory = $this->container()->get(ClientFactory::class);
         return $clientFactory->create($options);
-        
+
+        // $factory = new HandlerStackFactory();
+        // $stack = $factory->create($options);
+        // return make(Client::class, [
+        //     'config' => [
+        //         'handler' => $stack,
+        //     ],
+        // ]);
+
         // 替换注入GuzzleHttp\Client客户端，以协程方式实现
         // return new Client($options);
     }
@@ -172,7 +183,7 @@ trait HttpRequest
         if (false !== stripos($contentType, 'json') || stripos($contentType, 'javascript')) {
             return json_decode($contents, true);
         } elseif (false !== stripos($contentType, 'xml')) {
-            return json_decode(json_encode(simplexml_load_string($contents)), true);
+            return DataParser::toArray($contents);
         }
 
         return $contents;
