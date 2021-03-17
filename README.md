@@ -34,13 +34,18 @@ use \myttyy\Hyperf\Payment\Client;
 
 |  表头   | 表头  |
 |  ----  | ----  |
-| \myttyy\Hyperf\Payment\Client;  | 单元格 |
-| 单元格  | 单元格 |
+| \myttyy\Hyperf\Payment\Client;  | 入口类 |
+| \myttyy\Hyperf\Payment\Exceptions\GatewayException;  | 请求网关异常 |
+| \myttyy\Hyperf\Payment\Exceptions\ClassNotFoundException;  | 调用类不存在 |
+| \myttyy\Hyperf\Payment\Contracts\IPayNotify;  | 支付回调父类，请复写handle方法 |
 
 - **APP支付demo**
 
 ```php
-
+use \myttyy\Hyperf\Payment\Client;
+use \myttyy\Hyperf\Payment\Contracts\IPayNotify;
+use \myttyy\Hyperf\Payment\Exceptions\GatewayException;
+use \myttyy\Hyperf\Payment\Exceptions\ClassNotFoundException;
 
 $config = [
     // 配置信息，各个渠道的配置模板见对应子目录
@@ -59,16 +64,16 @@ $payData = [
 
 // 使用
 try {
-    $client = new \myttyy\Hyperf\Payment\Client(\myttyy\Hyperf\Payment\Client::WECHAT, $wxConfig);
-    $res    = $client->pay(\myttyy\Hyperf\Payment\Client::WX_CHANNEL_APP, $payData);
+    $client = new Client(Client::WECHAT, $wxConfig);
+    $res    = $client->pay(Client::WX_CHANNEL_APP, $payData);
 } catch (InvalidArgumentException $e) {
     echo $e->getMessage();
     exit;
-} catch (\myttyy\Hyperf\Payment\Exceptions\GatewayException $e) {
+} catch (GatewayException $e) {
     echo $e->getMessage();
     var_dump($e->getRaw());
     exit;
-} catch (\myttyy\Hyperf\Payment\Exceptions\ClassNotFoundException $e) {
+} catch (ClassNotFoundException $e) {
     echo $e->getMessage();
     exit;
 } catch (Exception $e) {
@@ -81,8 +86,14 @@ try {
 - **异步/同步通知**
 
 ```php
+
+use \myttyy\Hyperf\Payment\Client;
+use \myttyy\Hyperf\Payment\Contracts\IPayNotify;
+use \myttyy\Hyperf\Payment\Exceptions\GatewayException;
+use \myttyy\Hyperf\Payment\Exceptions\ClassNotFoundException;
+
 // 自己实现一个类，继承该接口
-class TestNotify implements \myttyy\Hyperf\Payment\Contracts\IPayNotify
+class TestNotify implements IPayNotify
 {
     /**
      * 处理自己的业务逻辑，如更新交易状态、保存通知数据等等
@@ -103,29 +114,30 @@ class TestNotify implements \myttyy\Hyperf\Payment\Contracts\IPayNotify
     }
 }
 
+// 配置信息，各个渠道的配置模板见对应子目录
 $config = [
-    // 配置信息，各个渠道的配置模板见对应子目录
+    
 ];
 
 // 实例化继承了接口的类
 $callback = new TestNotify();
 
 try {
-    $client = new \Payment\Client(\Payment\Client::ALIPAY, $config);
+    $client = new Client(Client::ALIPAY, $config);
     $xml = $client->notify($callback);
-} catch (InvalidArgumentException $e) {
+} catch (\InvalidArgumentException $e) {
     echo $e->getMessage();
     exit;
-} catch (\Payment\Exceptions\GatewayException $e) {
+} catch (GatewayException $e) {
     echo $e->getMessage();
     exit;
-} catch (\Payment\Exceptions\ClassNotFoundException $e) {
+} catch (ClassNotFoundException $e) {
     echo $e->getMessage();
     exit;
-} catch (Exception $e) {
+} catch (\Exception $e) {
      echo $e->getMessage();
      exit;
- }
+}
 
 ```
 
