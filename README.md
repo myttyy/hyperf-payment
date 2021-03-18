@@ -445,7 +445,7 @@ $config = [
 字段 | 解释 | 必须
 ---|---|---
 subject | 商品简单描述，该字段须严格按照规范传递，具体请见[参数规定](https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=4_2) | Y
-body | 单品优惠字段(暂未上线) | Y
+body | 单品优惠字段 | Y
 trade_no | 商户系统内部的订单号,32个字符内、可包含字母, 其他说明见[商户订单号](https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=4_2) | Y
 amount | 订单总金额，单位为元 | Y
 client_ip | 必须传正确的用户端IP,支持ipv4、ipv6格式，获取方式详见[获取用户ip指引](https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=15_5) | Y

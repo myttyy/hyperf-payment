@@ -33,15 +33,50 @@ class DataParser
             return false;
         }
 
-        $xml = '<xml>';
-        foreach ($values as $key => $val) {
-            if (is_numeric($val)) {
-                $xml .= '<' . $key . '>' . $val . '</' . $key . '>';
-            } else {
-                $xml .= '<' . $key . '><![CDATA[' . $val . ']]></' . $key . '>';
-            }
+        return self::xml_encode($values);
+
+        // $xml = '<xml>';
+        // foreach ($values as $key => $val) {
+        //     if (is_numeric($val)) {
+        //         $xml .= '<' . $key . '>' . $val . '</' . $key . '>';
+        //     } else {
+        //         $xml .= '<' . $key . '><![CDATA[' . $val . ']]></' . $key . '>';
+        //     }
+        // }
+        // $xml .= '</xml>';
+        // return $xml;
+    }
+
+
+    /**
+     * XML编码
+     * @param mixed $data 数据
+     * @param string $encoding 数据编码
+     * @param string $root 根节点名
+     * @return string
+     */
+    public static function xml_encode($data, $encoding='utf-8', $root= 'xml') {
+        $xml    = '<?xml version="1.0" encoding="' . $encoding . '"?>';
+        $xml   .= '<' . $root . '>';
+        $xml   .= self::data_to_xml($data);
+        $xml   .= '</' . $root . '>';
+        return $xml;
+    }
+
+    /**
+     * 数据XML编码
+     * @param mixed $data 数据
+     * @return string
+     */
+    public static function data_to_xml($data) {
+        $xml = '';
+        foreach ($data as $key => $val) {
+            is_numeric($key) && $key = "item id=\"$key\"";
+            $xml    .=  "<$key>";
+            $xml    .=  ( is_array($val) || is_object($val)) ? self::data_to_xml($val) : $val;
+            list($key, ) = explode(' ', $key);
+            $xml    .=  "</$key>";
         }
-        $xml .= '</xml>';
         return $xml;
     }
 

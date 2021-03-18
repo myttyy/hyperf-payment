@@ -70,7 +70,7 @@ class CMBankProxy extends BaseObject implements IPayProxy, IQueryProxy
     private function getChargeClass(string $channel)
     {
         $name = ucfirst(str_replace(['-', '_', ''], '', $channel));
-        return "Payment\\Gateways\\CMBank\\{$name}Charge";
+        return "myttyy\\Hyperf\\Payment\\Gateways\\CMBank\\{$name}Charge";
     }
 
     /**

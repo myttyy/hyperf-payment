@@ -78,7 +78,7 @@ abstract class WechatBaseObject extends BaseObject
      * 设置加密方式
      * @var string
      */
-    protected $signType = '';
+    protected $signType = 'MD5';
 
     /**
      * 请求方法的名称
@@ -96,7 +96,7 @@ abstract class WechatBaseObject extends BaseObject
         $this->useBackup = self::$config->get('use_backup', false);
         $this->returnRaw = self::$config->get('return_raw', false);
         $this->merKey    = self::$config->get('md5_key', '');
-        $this->signType  = self::$config->get('sign_type', '');
+        $this->signType  = self::$config->get('sign_type', 'MD5');
         $this->nonceStr  = StrUtil::getNonceStr(self::NONCE_LEN);
 
         // 初始 微信网关地址
@@ -124,12 +124,16 @@ abstract class WechatBaseObject extends BaseObject
     {
         $params = [
             'appid'      => self::$config->get('app_id', ''),
-            'sub_appid'  => self::$config->get('sub_appid', ''),
             'mch_id'     => self::$config->get('mch_id', ''),
-            'sub_mch_id' => self::$config->get('sub_mch_id', ''),
             'nonce_str'  => $this->nonceStr,
             'sign_type'  => $this->signType,
         ];
+
+        if (!empty(self::$config->get('sub_mch_id', ''))) {
+            $params['sub_mch_id'] = self::$config->get('sub_mch_id', '');
+            $params['sub_appid'] = self::$config->get('sub_appid', '');
+        }
+
         $params = $this->changeKeyName($params);
 
         if (!empty($requestParams)) {
@@ -149,7 +153,6 @@ abstract class WechatBaseObject extends BaseObject
         } catch (\Exception $e) {
             throw new GatewayException($e->getMessage(), Payment::PARAMS_ERR);
         }
-
         $xmlData = DataParser::toXml($params);
         if ($xmlData === false) {
             throw new GatewayException('error generating xml', Payment::FORMAT_DATA_ERR);
@@ -188,7 +191,7 @@ abstract class WechatBaseObject extends BaseObject
         } catch (GatewayException $e) {
             throw $e;
         }
-
+        unset($signStr);
         return strtoupper($sign);
     }
 
