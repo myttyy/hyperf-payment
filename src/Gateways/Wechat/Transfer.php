@@ -27,6 +27,20 @@ class Transfer extends WechatBaseObject implements IGatewayRequest
     const METHOD = 'mmpaymkttransfers/promotion/transfers';
 
     /**
+     * 申请商户号的appid或商户号绑定的appid
+     *
+     * @var string
+     */
+    private $mchAppid = '';
+
+    public function __construct(){
+        parent::__construct();
+
+        $this->mchAppid  = self::$config->get('mch_appid', '');;
+    }
+
+
+    /**
      * 获取第三方返回结果
      * @param array $requestParams
      * @return mixed
@@ -35,6 +49,7 @@ class Transfer extends WechatBaseObject implements IGatewayRequest
     public function request(array $requestParams)
     {
         try {
+        
             return $this->requestWXApi(self::METHOD, $requestParams);
         } catch (GatewayException $e) {
             throw $e;
@@ -58,6 +73,8 @@ class Transfer extends WechatBaseObject implements IGatewayRequest
             'amount'           => $totalFee,
             'desc'             => $requestParams['desc'] ?? '',
             'spbill_create_ip' => $requestParams['client_ip'] ?? '',
+
+            'mch_appid'        => $this->mchAppid ?? '',
         ];
 
         return $selfParams;

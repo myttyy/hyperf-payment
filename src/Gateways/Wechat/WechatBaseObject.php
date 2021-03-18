@@ -326,7 +326,7 @@ abstract class WechatBaseObject extends BaseObject
         if ($this->methodName === 'mmpaymkttransfers/promotion/transfers') {
             $params['mch_appid'] = $params['appid'];
             $params['mchid']     = $params['mch_id'];
-            unset($params['appid']);
+            unset($params['appid'], $params['mch_id'], $params['sign_type']);
         } elseif ($this->methodName === 'mmpaymkttransfers/sendredpack') {
             unset($params['appid']);
             $params['wxappid'] = self::$config->get('app_id', '');
