@@ -4,6 +4,7 @@
 
 - 感谢[helei112g/payment](https://github.com/zxyfaxcn/hyperf-payment)的改造参考，此版本重新适配swoole4.6.x+hyperf2.x
 
+- 微信支付目前使用V2接口，预计全面下一版更新为V3接口
 ## 项目集成
 
 - **安装**
